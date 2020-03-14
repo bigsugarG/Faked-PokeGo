@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BattleActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/nohara"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/command1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="290dp"
+        app:layout_constraintVertical_bias="0.006"
+        android:orientation="vertical"
+        android:background="#666">
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:text="Point you will get"
+            android:textSize="15dp"
+            android:fontFamily="casual"
+            android:textColor="#FFF"
+            android:background="#666" />
+        <TextView
+            android:id="@+id/totalpoint"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="TotalPoint"
+            android:fontFamily="casual"
+            android:textColor="#FFF"
+            android:background="#666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="160dp"
+        app:layout_constraintVertical_bias="0.006"
+        android:orientation="vertical"
+        android:background="#666">
+        <TextView
+            android:id="@+id/drugStock"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="drugStock"
+            android:fontFamily="casual"
+            android:textColor="#FFF"
+            android:background="#666" />
+        <TextView
+            android:id="@+id/ballStock"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="ballStock"
+            android:fontFamily="casual"
+            android:textColor="#FFF"
+            android:background="#666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pokemon"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="220dp"
+            android:scaleType="centerCrop"
+            android:translationZ="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bomb"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bakuhatsu"
+            android:translationZ="1dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="50dp"/>
+        <ImageView
+            android:id="@+id/popuko"
+            android:layout_width="241dp"
+            android:layout_height="225dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/popukoaikon"
+            android:translationZ="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp">
+            <TextView
+                android:id="@+id/hp4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="your HP"
+                android:textSize="25dp"
+                android:background="#00FF00" />
+            <TextView
+                android:id="@+id/hp3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                android:background="#00FF00" />
+            <TextView
+                android:id="@+id/hp2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                android:background="#00FF00" />
+            <TextView
+                android:id="@+id/hp1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                android:background="#00FF00" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/command1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/here"
+        android:gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="270dp">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="145dp"
+            android:layout_height="70dp"
+            android:text="戦う"
+            android:onClick="onClickBattle"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="145dp"
+            android:layout_height="70dp"
+            android:onClick="onClickEscape"
+            android:text="逃げる" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/command1">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="145dp"
+            android:layout_height="70dp"
+            android:onClick="onClickBag"
+            android:text="バッグ" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="145dp"
+            android:layout_height="70dp"
+            android:onClick="onClickPipimi"
+            android:text="ピピ美" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
